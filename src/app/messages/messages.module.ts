@@ -13,7 +13,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatStepperModule} from '@angular/material/stepper';
 
 import {MatAutocompleteModule } from '@angular/material/autocomplete';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   imports: [
@@ -27,7 +27,8 @@ import {MatAutocompleteModule } from '@angular/material/autocomplete';
     MatInputModule,
     MatStepperModule,
     MatIconModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatTooltipModule
   ],
   declarations: [MessageListComponent, MessageNewComponent]
 })

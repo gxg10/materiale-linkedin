@@ -14,7 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
-
+import { MatSortModule, MatTableModule, MatCheckboxModule, MatPaginatorModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -28,7 +28,11 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
     MatIconModule,
     MatInputModule,
     MatTabsModule,
-    MatMomentDateModule
+    MatMomentDateModule,
+    MatTableModule,
+    MatSortModule,
+    MatCheckboxModule,
+    MatPaginatorModule
   ],
   declarations: [OrderListComponent, OrderNewComponent]
 })
