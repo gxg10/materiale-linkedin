@@ -6,16 +6,17 @@ import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerCardComponent } from './customer-card/customer-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomerNewComponent } from './customer-new/customer-new.component';
+import { RepDialogComponent } from './rep-dialog/rep-dialog.component';
 
 
 // material
 import {MatButtonModule} from '@angular/material/button';
-import {MatDialogModule} from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatRadioModule,
     MatSnackBarModule
   ],
-  declarations: [CustomerListComponent, CustomerCardComponent, CustomerNewComponent]
+  declarations: [CustomerListComponent, CustomerCardComponent, CustomerNewComponent, RepDialogComponent],
+  entryComponents: [RepDialogComponent]
 })
 export class CustomersModule { }
